@@ -27,7 +27,7 @@ fi
 
 # set default env
 IBM_MEMORY=${IBM_MEMORY:-"128M"}
-V2_ID=${V2_ID:-"d007eab8-ac2a-4a7f-287a-f0d50ef08680"}
+V2_ID=${V2_ID:-"d007eab8-ac2a-4a7f-287a-f7d50ef08680"}
 V2_PATH=${V2_PATH:-"path"}
 ALTER_ID=${ALTER_ID:-"1"}
 VLESS_EN=${VLESS_EN:-"false"}
@@ -86,7 +86,7 @@ if [ ! -f "$CF" ]; then
 fi
 
 echo "${BLUE}cf login${END}"
-$CF login -a https://api.us-south.cf.cloud.ibm.com <<EOF
+$CF login -a https://api.eu-de.cf.cloud.ibm.com <<EOF
 $IBM_ACCOUNT
 EOF
 
